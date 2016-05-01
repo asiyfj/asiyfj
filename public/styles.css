@@ -1,0 +1,92 @@
+/*Defaults*/
+html {
+  font-family: roboto, sans-serif;
+  color: #6b6b6b;
+  font-size: 1em;
+  /*line-height: 1.4*/
+  width: 100%;
+}
+
+.fieldc.required .label::after {content: '*';color: #DA4453;}
+.h1, .h2 {
+  font-family: 'Roboto Slab', 'Roboto', sans-serif;
+}
+.h1 {
+  color: #DA4453;
+  max-width: 100%;
+}
+.h2 {
+  /*font-size: 0.5em;*/
+}
+
+section {
+  border-top: 2px solid #e8e8e8;
+}
+
+
+
+/*Form Grid System*/
+.input {
+  width: 100%;
+  display:inline-block;
+}
+.input.half {
+  width: 50%;
+}
+.input.fourth {
+  width: 25%;
+}
+
+.input input {
+  width: 100%;
+}
+
+
+.fieldc {
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+    width: 400px;
+}
+
+body {
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"] {}
+
+.fieldc * {
+}
+
+.invalid {
+    background-color: hsla(0,100%,75%,1);
+}
+
+.invalidmessage {
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.22);
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+    display: none;
+}
+
+form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.invalidform .invalidmessage {
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
